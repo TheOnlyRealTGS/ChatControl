@@ -38,6 +38,10 @@ then console kick %player &cI don't think so.
 then deny
 then log
 
+# -------- Prevent spammy Minecraft-chat mobile entry messages
+match using Minecraft Connect! Check it out, it's free|using MineChat|Connected from Hyperchat
+then rewrite I can't get enough of this server.
+
 # -------- Example usage of unicode characters - making smileys
 match :\)
 then replace ☺
